@@ -8,8 +8,8 @@ from rssi import RSSI_Scan #Imports the RSSI_scan class from the sibling rssi fi
 from rssi import RSSI_Localizer
 
 
-from wifi_scan_py.msg import AddressRSSI
-from wifi_scan_py.msg import Fingerprint
+from wifi_scan_pub.msg import AddressRSSI
+from wifi_scan_pub.msg import Fingerprint
 
 
 
