@@ -1,0 +1,9 @@
+<launch>
+  <node pkg="wifi_scan_py" type="wifi_pub.py" name="wifi_scan_pub" output="screen">
+      <param name="interface" value="wlx88366cfc5e50"/>
+
+      <param name="topic" value="wifi_fp"/>
+ 
+
+  </node>
+</launch>
