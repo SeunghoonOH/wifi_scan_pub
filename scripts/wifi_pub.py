@@ -75,7 +75,10 @@ def wifi_scan():
 
 	 raw_scan_info = rssi.getRawNetworkScan(sudo=True)['output'] 
 	 msg = all_access_pt(raw_scan_info)
-         rospy.loginfo(msg)
+	 if msg == False:
+	 	continue
+		
+        # rospy.loginfo(msg)
          pub.publish(msg)
 
          rate.sleep()
