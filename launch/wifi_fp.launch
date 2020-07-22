@@ -1,5 +1,5 @@
 <launch>
-  <node pkg="wifi_scan_pub" type="wifi_scan_pub.py" name="wifi_scan_pub_node" output="screen">
+  <node pkg="wifi_scan_pub" type="wifi_scan.py" name="wifi_scan_pub_node" output="screen">
       <param name="interface" value="wlan0"/>
 
       <param name="topic" value="wifi_fp"/>
