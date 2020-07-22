@@ -63,7 +63,7 @@ def parseFPCell(raw_cell):
 
 def wifi_scan():
 
-    rospy.init_node('wifi_scan_node', anonymous=True)
+    rospy.init_node('wifi_scan_pub_node', anonymous=True)
     interface = rospy.get_param('~interface', 'wlx88366cfc5e50')
     wifi_topic = rospy.get_param('topic','wifi_fp')
     pub = rospy.Publisher(wifi_topic, Fingerprint, queue_size=10)
