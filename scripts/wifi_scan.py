@@ -6,7 +6,7 @@ import rospy
 #import rssi
 from rssi import RSSI_Scan #Imports the RSSI_scan class from the sibling rssi file
 from rssi import RSSI_Localizer
-
+import time
 
 from wifi_scan_pub.msg import AddressRSSI
 from wifi_scan_pub.msg import Fingerprint
@@ -76,6 +76,7 @@ def wifi_scan():
 	 raw_scan_info = rssi.getRawNetworkScan(sudo=True)['output'] 
 	 msg = all_access_pt(raw_scan_info)
 	 if msg == False:
+		time.sleep(1)
 	 	continue
 		
         # rospy.loginfo(msg)
